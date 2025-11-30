@@ -1,0 +1,220 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        
+        //"type": "auto",
+        //"source": "~/Pictures/STYLE4.PNG",
+        //"type": "kitty-direct",
+        //"l": "windows",
+        "height": 25,
+        "width": 50,
+        "padding": {
+            "top": 4,
+            "left": 5
+        }
+    },
+
+    "display": {
+                "separator": " = "
+                },
+    "modules": [
+        {
+            "type": "command",
+            "shell": "/bin/sh",
+            "text": "cls"
+        },
+        {
+            "type": "colors",
+            "paddingLeft": 20,
+            "width": 1,
+            "symbol": "star"
+        },
+
+        "break",
+{
+"type": "custom",
+"key": "Currrent Session: ",
+"keyColor": "magenta",
+"outputColor": "yellow",
+"format": "FastFetch v2.55.1 (x86_64)"
+},
+ 
+       {
+            "type": "custom",
+            "format": "\u001b[90m+----------------------Hardware-------------------------+"
+        },
+        {
+            "type": "host",
+            "key": "|     PC",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "|    CPU",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "|    GPU",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "|    MEM",
+            "keyColor": "green"
+        },
+        {
+            "type": "physicaldisk",
+            "key": "|   DISK",
+            "keyColor": "green"
+        },
+        {
+            "type": "keyboard",
+
+            "key": "|  KEYBD",
+            "keyColor": "green"
+        },
+        {
+            "type": "mouse",
+
+            "key": "|  MOUSE",
+            "keyColor": "green"
+        },
+        {
+            "type": "sound",
+
+            "key": "|  SOUND",
+            "keyColor": "green"
+        },
+
+//        {
+//            "type": "custom",
+//            "format": "\u001b[90m+-------------------------------------------------------+"
+//        },
+        //"break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m+----------------------Software-------------------------+"
+        },
+        {
+            "type": "os",
+            "key": "|              OS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "|          KERNEL",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "bios",
+            "key": "|            BIOS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "|            PKGS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": "|           SHELL",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "swap",
+
+            "key": "|            SWAP",
+            "keyColor": "yellow"
+        },
+        //"break",
+        {
+            "type": "de",
+            "key": "|              DE",
+            "keyColor": "blue"
+        },
+        {
+            "type": "lm",
+            "key": "|              LM",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "|              WM",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wmtheme",
+            "key": "|           THEME",
+            "keyColor": "blue"
+        },
+        {
+            "type": "terminal",
+            "key": "|            TERM",
+            "keyColor": "blue"
+        },
+        {
+            "type": "editor",
+            "key": "|          EDITOR",
+            "keyColor": "blue"
+        },
+
+
+//        {
+//            "type": "custom",
+//            "format": "\u001b[90m+-------------------------------------------------------+"
+//        },
+        //"break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m+----------------------TimeStamps-----------------------+"
+        },
+        {
+            "type": "command",
+            "key": "|  OS AGE",
+            "keyColor": "red",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "uptime",
+            "key": "|  UPTIME",
+            "keyColor": "red"
+        },
+        {
+            "type": "datetime",
+            "key": "| CURRENT",
+            "keyColor": "red"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m+-------------------------------------------------------+"
+        },
+{
+"type": "media",
+"key": "Now Playing: ",
+"keyColor": "bright_cyan",
+"outputColor": "italic_blue",
+},
+
+
+{
+"type": "custom",
+"key": "My Cats Name: ",
+"keyColor": "magenta",
+"outputColor": "yellow",
+"format": "Smudges"
+},
+
+
+//        {
+//            "type": "colors"
+//        },
+
+        {
+            "type": "colors",
+            "paddingLeft": 20,
+            "symbol": "star"
+        }
+
+    ]
+}
