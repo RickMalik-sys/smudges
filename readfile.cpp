@@ -68,6 +68,5 @@ if(inputFileName == "")
     else{cerr <<"error opening file" <<endl; return 0;}
 
     }
-cout << "File name required.\n";
     return 0;
 }
