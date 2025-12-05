@@ -10,9 +10,10 @@ My discord server is at https://discord.gg/xZmfxsZr
 
 My YouTube channel https://www.youtube.com/channel/UC-mLBfBEH59Mk6DwSOYk_dw
 
+### Notes:
 I'll be posting config files and some code for public/free use here from time to time.
 I won't add any forks until I upload a few more files. Branches will seperate into areas of content type. Code, Hacks, Logs, etc.
 
 Be sure to *star* me, so I know if anyone is viewing the hub. I don't really care though, it's also a storage disc for me :)
 
-RM
+<b> RM </b>
