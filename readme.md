@@ -1,4 +1,4 @@
-# <p Align="center"> :us: <b> ` Smudges ` </b> :floppy_disk: </p> 
+# <p Align="center"> <b> ` Smudges ` </b> :floppy_disk: </p> 
 ## C++ Smudges
 ### Defined : C++ Smudges - Minor errors or inconsistencies: small, almost unnoticeable mistakes, like formatting issues or slightly misaligned code, that don't necessarily break the program but make it less clean or readable. Incomplete or messy code: sections of code that are not fully developed, have placeholder values, or are generally disorganized. Code that needs refinement: functions but could be optimized for performance, readability, or maintainability.
 
