@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="CreateDir.exe"/>
+    <OBJFILES value="CreateDir.obj FormCreateFolder.obj"/>
+    <RESFILES value="CreateDir.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) FormCreateFolder.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dclocx.lib tee.lib Ricks2.lib added2.lib addons.lib vclx.lib bcbsmp.lib 
+      dclusr.lib Vcwb6.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib Vcwb6.lib dclusr.lib bcbsmp.lib vclx.lib addons.lib 
+      added2.lib Ricks2.lib tee.lib dclocx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi dsnapcrba.bpi 
+      dsnapcon.bpi vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi 
+      inetdb.bpi nmfast.bpi webdsnap.bpi bcbie.bpi websnap.bpi soaprtl.bpi 
+      dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi Vcwb6.bpi bcbsmp.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="CreateDir.cpp"/>
+    <INCLUDEPATH value="CreateDir;&quot;..\very old projects\Projects\Cabinets&quot;;..\..\..\CabShop;..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;..\Include\Tiwc6;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="CreateDir;&quot;..\very old projects\Projects\Cabinets&quot;;..\..\..\CabShop;..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;$(BCB)\Projects\Lib;..\Include\Tiwc6;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ICreateDir -I&quot;..\very old projects\Projects\Cabinets&quot; -I..\..\..\CabShop 
+      -I..\DRAFTPNL -I..\..\Images -I.. -I$(BCB)\Bin -Iproj004 
+      -I..\Include\Tiwc6 -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp 
+      -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="CreateDir.res" FORMNAME="" UNITNAME="CreateDir.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CreateDir.cpp" FORMNAME="" UNITNAME="CreateDir" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FormCreateFolder.cpp" FORMNAME="CreateFolderDlg" UNITNAME="FormCreateFolder" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=-------------------------------------------------
+FileDescription=Creates new folders and sub-folders,
+FileVersion=1.0.0.0
+InternalName=(it's all in machine language)
+LegalCopyright=©2025, R. Malik
+LegalTrademarks=Flashelp
+OriginalFilename=createdir.exe
+ProductName=Create Folder 1.0 (Beta)
+ProductVersion=1.0.0.0
+Comments=Rick loves his cats.
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\bcbie60.bpl=Borland C++Builder Internet Explorer 5 Components Package
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=CreateDir;..\very old projects\Projects\Cabinets;..\..\..\CabShop;..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;..\Include\Tiwc6;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\very old projects\Projects\Cabinets;..\..\..\CabShop;..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;..\Include\Tiwc6;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;..\Include\Tiwc6;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\DRAFTPNL;$(BCB)\projects\draftpnl;..\..\Images;..;$(BCB)\Bin;proj004;..\Include\Tiwc6;$(BCB)\include;$(BCB)\include\vcl
+Item4=$(BCB)\projects\draftpnl;..\..\Images;..;$(BCB)\Bin;proj004;..\Include\Tiwc6;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=CreateDir;..\very old projects\Projects\Cabinets;..\..\..\CabShop;..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;$(BCB)\Projects\Lib;..\Include\Tiwc6;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\very old projects\Projects\Cabinets;..\..\..\CabShop;..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;$(BCB)\Projects\Lib;..\Include\Tiwc6;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\DRAFTPNL;..\..\Images;..;$(BCB)\Bin;proj004;$(BCB)\Projects\Lib;..\Include\Tiwc6;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\DRAFTPNL;$(BCB)\projects\draftpnl;..\..\Images;..;$(BCB)\Bin;proj004;$(BCB)\Projects\Lib;..\Include\Tiwc6;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\projects\draftpnl;..\..\Images;..;$(BCB)\Bin;proj004;$(BCB)\Projects\Lib;..\Include\Tiwc6;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl;C:\Program Files\Borland\CBuilder6\Examples\Controls\Source\
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl;C:\Program Files\Borland\CBuilder6\Examples\Controls\Source\
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
