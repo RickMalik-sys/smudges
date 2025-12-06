@@ -4,13 +4,15 @@
 
 ## Links:
 
-My blog: https://cppsmudges.blogspot.com/
+Blog: https://cppsmudges.blogspot.com/
 
-My discord server: https://discord.gg/xZmfxsZr
+Discord server: https://discord.gg/xZmfxsZr
 
-My YouTube channel: https://www.youtube.com/channel/UC-mLBfBEH59Mk6DwSOYk_dw
+YouTube channel: https://www.youtube.com/channel/UC-mLBfBEH59Mk6DwSOYk_dw
 
-My Reddit channel: https://www.reddit.com/user/Icy_Speed_1103/
+Reddit channel: https://www.reddit.com/user/Icy_Speed_1103/
+
+Facebook: https://www.facebook.com/rick.malik.50
 
 ### Notes:
 I'll be posting config files and some code for public/free use here from time to time.
