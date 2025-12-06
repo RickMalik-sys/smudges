@@ -4,11 +4,13 @@
 
 ## Links:
 
-My blog is at https://cppsmudges.blogspot.com/
+My blog: https://cppsmudges.blogspot.com/
 
-My discord server is at https://discord.gg/xZmfxsZr
+My discord server: https://discord.gg/xZmfxsZr
 
-My YouTube channel https://www.youtube.com/channel/UC-mLBfBEH59Mk6DwSOYk_dw
+My YouTube channel: https://www.youtube.com/channel/UC-mLBfBEH59Mk6DwSOYk_dw
+
+My Reddit channel: https://www.reddit.com/user/Icy_Speed_1103/
 
 ### Notes:
 I'll be posting config files and some code for public/free use here from time to time.
