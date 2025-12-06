@@ -1,5 +1,4 @@
 # MS-Windows files
-## /bin - binary .exe .dll .res .rc .img
 
-# c++ src - source files for programs
+## /bin - binary .exe .dll .res .rc .img
 ## /src - .cpp ,h .bpl .txt
