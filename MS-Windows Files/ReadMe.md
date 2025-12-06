@@ -2,5 +2,6 @@
 
 ## /bin - 
 ### binary .exe .dll .res .rc .img
-## 
-### /src - .cpp ,h .bpl .txt
+
+## /src -
+### .cpp ,h .bpl .txt
