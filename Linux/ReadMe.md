@@ -1,14 +1,10 @@
-# Linux Mint 22.2 - Cinnamon
-## Personal configurations I find useful.
+# Linux Mint 22.2 - Cinnamon :floppy_disk:
 
-### Desktop
+## /bin - 
+### binary executables and their readme files
 
-#### One
-#### Two
-#### Three
+## /src -
+### c++ source files for executables found in /bin
 
-### Terminal
-#### Blackbox
-#### Kitty
-#### Gnome
-
+## /c0onfig -
+### configuration files for different apps throughout Linux-Mint
