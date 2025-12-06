@@ -1,7 +1,7 @@
 # MS-Windows files :floppy_disk:
 
 ## /bin - 
-### binary .exe .dll .res .rc .img
+### (binary) .exe .dll .res .rc .img
 
 ## /src -
-### .cpp ,h .bpl .txt
+### (ansi txt) .cpp ,h .bpl .txt
