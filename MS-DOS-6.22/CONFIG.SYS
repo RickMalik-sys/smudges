@@ -1,0 +1,17 @@
+DEVICE=C:\DOS\SETVER.EXE
+DEVICE=C:\DOS\HIMEM.SYS
+DOS=HIGH
+FILES=30
+BUFFERS=20
+LASTDRIVE=Z
+rem
+rem Load CD-Rom Drivers
+DEVICE=C:\DOS\cd1.SYS /D:banana
+rem Other Configurations Possible
+rem DEVICE=C:\DOS\cd1.SYS /D:banana /P:1f0,14
+rem DEVICE=C:\DOS\cd1.SYS /D:banana /P:170,15
+rem DEVICE=C:\DOS\cd1.SYS /D:banana /P:le8,12
+rem DEVICE=C:\DOS\cd1.SYS /D:banana /P:le8,11
+rem DEVICE=C:\DOS\cd1.SYS /D:banana /P:168,10
+rem DEVICE=C:\DOS\cd1.SYS /D:banana /P:168,9
+rem End CD-Rom Drivers
