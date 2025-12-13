@@ -8,6 +8,7 @@
 using namespace std;
 
 void printHelpMessage() {
+    cout << "\nPurpose: readfile is used as a command line interface to output file contents.\nIt can be used to read a file to the terminal stdout, or into another command, or piped to a new file.\nFor example: readfile -f myfile.txt >> newfile.txt\n";
     cout << "Usage: myprogram [OPTIONS]" << endl;
     cout << "Options:" << std::endl;
     cout << "  --help, -h    Display this help message" << endl;
