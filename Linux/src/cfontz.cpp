@@ -10,7 +10,7 @@
 #include  <fcntl.h>
 #include  <errno.h>
 #include  <ctype.h>
-#include "c634.h"
+#include "cfontz.h"
 using namespace std;
 //============================================================================
 #define FALSE   0
