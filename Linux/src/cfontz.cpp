@@ -10,7 +10,7 @@
 #include  <fcntl.h>
 #include  <errno.h>
 #include  <ctype.h>
-#include "cfontz.h"
+#include "c634.h"
 using namespace std;
 //============================================================================
 #define FALSE   0
@@ -22,16 +22,22 @@ using namespace std;
 //============================================================================
 // --help
 void printHelpMessage() {
-    std::cout << "Usage: cfontz [OPTIONS] [PATH to PORT] [BAUD] (optional 'clear' to clear display)" << std::endl;
-    std::cout << "Options:" << std::endl;
-    std::cout << "  -h  --help                    Display this help message" << std::endl;
-    std::cout << "  -v  --version                 Display program version" << std::endl;
-    std::cout << "  -q  --quiet (REQUIRED)        Minimal output to stdout\n" << std::endl;
-    printf("Example: cfontz -q /dev/ttyS0 9600 -or- cfontz -q /dev/ttyS0 9600 clear\n");
-    printf("Use CTRL+C to Quit\n\n");
-    printf("Crystalfontz-SR634 Display Driver (RMSoftware-2025)\n");
-
-
+    cout << "Usage: cfontz [OPTIONS] || [PORT] [BAUD] [ADDITIONAL]\n\n";
+    cout << "Required:\n";
+    cout << "  PORT          path to port, ie, /dev/ttyS0-3\n";
+    cout << "  BAUD          2400, 4800, 9600, 19200\n";
+    cout << "Example: cfontz /dev/ttyS0 9600\n\n";
+    cout << "Additional:\n";
+    cout << "  quiet         Minimal output to stdout\n";
+    cout << "  clear         Clears display, then exits\n";
+    cout << "Example: cfontz /dev/ttyS0 9600 quiet -or- cfontz /dev/ttyS0 9600 clear\n\n";
+    cout << "Options:\n";
+    cout << "  -h  --help       Display this help message\n";
+    cout << "  -v  --version    Display program version\n";
+    cout << "Example: cfontz -h -or- cfontz --help || cfontz -v -or- cfontz --version\n\n";
+    cout << "Use CTRL+C to Quit\n\n";
+    cout << "Crystalfontz-SR634 Display Driver (RMSoftware-2025)\n";
+    cout << "Feedback can be directed to fcinstaller@gmail.com, subj: cfontz.\n";
     // Add more options and descriptions as needed
 }
 
@@ -40,35 +46,33 @@ int main(int argc, char* argv[]) {
     // Loop through the command-line arguments, starting from argv[1]
     // argv[0] is always the program name itself
 	QuietMode = false;
+    cleardisplay= false;
     for (int i = 1; i < argc; ++i)
 	{
         std::string arg = argv[i];
-
         if (arg == "--help" || arg == "-h")
 		{
 	            printHelpMessage();
 	            return 0; // Exit after displaying help
 	        }
-        // Add more argument handling here
+
         else if (arg == "--version" || arg == "-v")
 		{
-	            std::cout << "My Program Version 1.0" << std::endl;
-        	    return 0;
+	            std::cout << "cfontz Version 1.0" << std::endl;
+        	    return 0; // Exit after displaying version
         	}
-        else if (arg == "--quiet" || arg== "-q")
-		{
-			QuietMode = true;
+//        else
+//		{
+//	            std::cerr << "Unknown argument: " << arg << std::endl;
+//	            std::cerr << "Use --help for usage information." << std::endl;
+//	            return 1; // Indicate error
+//	        }
 
 //===========================================================================
 // main logic
-    if(!QuietMode)
-    {
-    printf("Crystalfontz-SR634 Display Driver (RMSoftware-2025)\n");
-    printf("Use CTRL+C to Quit\n\n");
-    }
 
   //If only 0 or 1 parameter is entered, prompt for the missing parameter(s)
-  if(argc < 4)
+  if(argc < 3)
     {
       printf("\nMISSING A PARAMETER. Enter both PORT and BAUD.\n\n");
       return(0);
@@ -76,31 +80,41 @@ int main(int argc, char* argv[]) {
 
   //Check for optional "clear" parameter and set flag if found
   
-    cleardisplay=0;
-  if((argc > 4) && (!strcmp(argv[4],"clear"))) 
-    cleardisplay=1;
 
-  if(cleardisplay==1)
+  if((argc > 3) && (!strcmp(argv[3],"clear"))){ 
+    cleardisplay=1;}
+  if((argc > 3) && (!strcmp(argv[3],"quiet"))){
+    QuietMode = true;}
+    if(QuietMode == false)
+    {
+    printf("Crystalfontz-SR634 Display Driver (RMSoftware-2025)\n");
+        if(!cleardisplay)
+        {
+        printf("Use CTRL+C to Quit\n\n");
+        }
+    }
+
+  if(cleardisplay == true)
 {
 
   int
     baud;
   //default the baud to 19200
-  if(!strcmp(argv[3],"1200"))
+  if(!strcmp(argv[2],"1200"))
     baud=1200;
   else
-    if(!strcmp(argv[3],"2400"))
+    if(!strcmp(argv[2],"2400"))
       baud=2400;
     else
-      if(!strcmp(argv[3],"4800"))
+      if(!strcmp(argv[2],"4800"))
         baud=4800;
       else
-        if(!strcmp(argv[3],"9600"))
+        if(!strcmp(argv[2],"9600"))
           baud=9600;
         else
           baud=19200;
 
-  if(Serial_Init(argv[2],baud))
+  if(Serial_Init(argv[1],baud))
     {
       printf("Could not open port \"%s\" at \"%d\" baud.\n",argv[1],baud);
       return(1);
@@ -162,7 +176,7 @@ int main(int argc, char* argv[]) {
     }
   else
     {
-    s1 = "Date: " + exec("date -I") ;
+    s1 = "Date: " + exec("date") ;
         //12345678901234567890
       SendString(s1.data());
     }
@@ -196,21 +210,21 @@ printf("Display Cleared.\n");
   int
     baud;
   //default the baud to 19200
-  if(!strcmp(argv[3],"1200"))
+  if(!strcmp(argv[2],"1200"))
     baud=1200;
   else
-    if(!strcmp(argv[3],"2400"))
+    if(!strcmp(argv[2],"2400"))
       baud=2400;
     else
-      if(!strcmp(argv[3],"4800"))
+      if(!strcmp(argv[2],"4800"))
         baud=4800;
       else
-        if(!strcmp(argv[3],"9600"))
+        if(!strcmp(argv[2],"9600"))
           baud=9600;
         else
           baud=19200;
 
-  if(Serial_Init(argv[2],baud))
+  if(Serial_Init(argv[1],baud))
     {
       printf("Could not open port \"%s\" at \"%d\" baud.\n",argv[1],baud);
       return(1);
@@ -247,13 +261,7 @@ printf("Display Cleared.\n");
 			pause(); // Wait for the next signal
 			}
 //----------------------------
-        }
-        else
-		{
-	            std::cerr << "Unknown argument: " << arg << std::endl;
-	            std::cerr << "Use --help for usage information." << std::endl;
-	            return 1; // Indicate error
-	        }
+        //}
 	}
 //------------------------------    
 return 0;
@@ -307,7 +315,7 @@ void timer_handler(int signum) {
     }
   else
     {
-    s1 = "Date: " + exec("date -I") ;
+    s1 = "Date: " + exec("date +%D") ;
         //12345678901234567890
       SendString(s1.data());
     }
