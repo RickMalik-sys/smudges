@@ -1,4 +1,4 @@
-//cfontz.cpp/h (c) 2025 RMSoftware--------------------------------------------
+//cfontz.cpp/h (c) 2025 RMSoftware-------------------------------------------
 #include <iostream>
 #include <stdio.h>
 #include <signal.h>
