@@ -75,20 +75,20 @@ public:
 ╬    DOUBLE_VERTICAL_HORIZONTAL
 //------------------------------------------------------------------
 //HEAVY-------------------------------------------------------------
-┃	HEAVY VERTICAL		\342\224\203
-┳	HEAVY DOWN AND HORIZONTAL	\342\224\263
-━	HEAVY HORIZONTAL	\342\224\201
-┻	HEAVY UP AND HORIZONTAL	\342\224\273
-┗	HEAVY UP AND RIGHT	\342\224\227
-┛	HEAVY UP AND LEFT	\342\224\233
-┏	HEAVY DOWN AND RIGHT	\342\224\217
-┓	HEAVY DOWN AND LEFT	\342\224\223
+┃	HEAVY VERTICAL	
+┳	HEAVY DOWN AND HORIZONTAL
+━	HEAVY HORIZONTAL
+┻	HEAVY UP AND HORIZONTAL
+┗	HEAVY UP AND RIGHT
+┛	HEAVY UP AND LEFT
+┏	HEAVY DOWN AND RIGHT
+┓	HEAVY DOWN AND LEFT
 //------------------------------------------------------------------
-┣	HEAVY_VERTICAL_RIGHT	\342\224\243
+┣	HEAVY_VERTICAL_RIGHT
 
-┫	HEAVY_VERTICAL_LEFT 	\342\224\253
+┫	HEAVY_VERTICAL_LEFT
 
-╋	HEAVY_VERTICAL_HORIZONTAL	\342\225\213
+╋	HEAVY_VERTICAL_HORIZONTAL
 //------------------------------------------------------------------
 //MIXED DOUBLE AND SINGLE-------------------------------------------
 ╙    UP_DOUBLE_RIGHT_SINGLE
