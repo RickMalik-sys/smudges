@@ -75,20 +75,20 @@ public:
 ╬    DOUBLE_VERTICAL_HORIZONTAL
 //------------------------------------------------------------------
 //HEAVY-------------------------------------------------------------
-┃	HEAVY VERTICAL	
-┳	HEAVY DOWN AND HORIZONTAL
-━	HEAVY HORIZONTAL
-┻	HEAVY UP AND HORIZONTAL
-┗	HEAVY UP AND RIGHT
-┛	HEAVY UP AND LEFT
-┏	HEAVY DOWN AND RIGHT
-┓	HEAVY DOWN AND LEFT
+┃  	HEAVY_VERTICAL	
+┳  	HEAVY_DOWN_HORIZONTAL
+━	  HEAVY_HORIZONTAL
+┻	  HEAVY_UP_HORIZONTAL
+┗	  HEAVY_UP_RIGHT
+┛	  HEAVY UP AND LEFT
+┏  	HEAVY_ DOWN_RIGHT
+┓  	HEAVY_DOWN_LEFT
 //------------------------------------------------------------------
-┣	HEAVY_VERTICAL_RIGHT
+┣	  HEAVY_VERTICAL_RIGHT
 
-┫	HEAVY_VERTICAL_LEFT
+┫	  HEAVY_VERTICAL_LEFT
 
-╋	HEAVY_VERTICAL_HORIZONTAL
+╋	  HEAVY_VERTICAL_HORIZONTAL
 //------------------------------------------------------------------
 //MIXED DOUBLE AND SINGLE-------------------------------------------
 ╙    UP_DOUBLE_RIGHT_SINGLE
@@ -180,6 +180,7 @@ string	HEAVY_DOWN_LEFT = "\342\224\223";
 string	HEAVY_VERTICAL_RIGHT = "\342\224\243";
 string	HEAVY_VERTICAL_LEFT = "\342\224\253";
 string	HEAVY_VERTICAL_HORIZONTAL = "\342\225\213";
+//SCREEN POS----------------------------------------------
 int SCREEN_TOP_LEFT, SCREEN_TOP_RIGHT, SCREEN_WIDTH;
 int SCREEN_BOTTOM_LEFT, SCREEN_BOTTOM_RIGHT, SCREEN_HEIGHT;
 int posX, posY;
