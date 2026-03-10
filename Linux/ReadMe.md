@@ -1,4 +1,4 @@
-# Linux Mint 22.2 - Cinnamon :floppy_disk:
+# Linux Mint 22.3 - Cinnamon :floppy_disk:
 
 ## /bin - 
 ### binary executables and their readme files, plus .zip files
